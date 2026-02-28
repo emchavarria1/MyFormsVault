@@ -1,0 +1,166 @@
+:root {
+  color-scheme: light;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #0b1220;
+  min-width: 380px;
+}
+
+.shell {
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 16px;
+}
+
+header p {
+  margin: 2px 0 0;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dce2ef;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.row.spread {
+  justify-content: space-between;
+}
+
+.stack {
+  display: grid;
+  gap: 8px;
+}
+
+.stack.compact {
+  gap: 4px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea,
+button {
+  border-radius: 8px;
+  border: 1px solid #bcc8e0;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 84px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+button {
+  background: #1b66ff;
+  color: #ffffff;
+  border-color: #1b66ff;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.ghost {
+  background: #eef3ff;
+  color: #1d2f6f;
+  border-color: #d5dff7;
+}
+
+button.danger {
+  background: #ffe8ea;
+  color: #7f1d1d;
+  border-color: #ffccd1;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.tab {
+  background: #f2f5fc;
+  color: #25324d;
+  border-color: #d9e0ee;
+}
+
+.tab.active {
+  background: #1b66ff;
+  color: #ffffff;
+  border-color: #1b66ff;
+}
+
+.hidden {
+  display: none;
+}
+
+.muted {
+  color: #5b6785;
+  font-size: 12px;
+  margin: 0;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  margin: 0;
+}
+
+.error {
+  color: #9f1239;
+  min-height: 16px;
+  margin: 0;
+  font-size: 12px;
+}
+
+.status {
+  min-height: 16px;
+  margin: 0;
+  color: #1d4ed8;
+  font-size: 12px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e6ebf5;
+  margin: 2px 0;
+}

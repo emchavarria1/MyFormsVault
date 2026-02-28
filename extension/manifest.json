@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Form Template Autofill",
+  "description": "Save reusable data templates and fill website forms.",
+  "version": "0.1.0",
+  "permissions": ["storage", "tabs", "activeTab"],
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost:8787/*",
+    "https://localhost:8787/*"
+  ],
+  "action": {
+    "default_title": "Form Template Autofill",
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
