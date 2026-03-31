@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MyFormsVault</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">MyFormsVault</div>
+      <div class="sub">Reusable info → forms & docs.</div>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <button id="btnLoadJson" class="secondary">Load</button>
+        <button id="btnExport" class="secondary">Export</button>
+      </div>
+      <textarea id="jsonArea" placeholder="(Optional) JSON view. Live sync should keep this updated now."></textarea>
+      <div class="row">
+        <button id="btnSaveJson">Save JSON</button>
+        <button id="btnClearMappings" class="secondary">Clear mappings</button>
+      </div>
+      <div id="status" class="sub" style="margin-top:8px;"></div>
+    </section>
+
+    <section class="card">
+      <label>Active profile</label>
+      <select id="profileSelect"></select>
+    </section>
+
+    <section class="card">
+      <label>Field</label>
+      <select id="fieldSelect"></select>
+      <div class="row">
+        <button id="btnInsert">Insert</button>
+        <button id="btnCopy">Copy</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <label>Learn this form field (mapping)</label>
+      <div id="mappingSummary" class="sub" style="margin-top:6px;"></div>
+      <div class="row" style="margin-top:6px;">
+        <select id="cautiousSelect">
+          <option value="conservative">Conservative</option>
+          <option value="balanced">Balanced</option>
+          <option value="aggressive">Aggressive</option>
+        </select>
+        <button id="btnSuggest" class="secondary">Suggest mappings</button>
+      </div>
+      <div class="sub">
+        1) Click into a form field on the page<br/>
+        2) Pick a field above<br/>
+        3) Click “Learn this field”
+      </div>
+      <div class="row">
+        <button id="btnLearn">Learn this field</button>
+        <button id="btnFillMapped" class="secondary">Fill mapped fields</button>
+      </div>
+      <div class="sub" id="mapInfo" style="margin-top:8px;"></div>
+    </section>
+
+    <section class="card">
+      <label>Template output</label>
+      <textarea id="templateOutput" placeholder="Paste rendered template output here..."></textarea>
+      <div class="row">
+        <button id="btnPasteTemplate">Paste</button>
+        <button id="btnCopyTemplate" class="secondary">Copy</button>
+      </div>
+    </section>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

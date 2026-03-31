@@ -1,5 +1,4 @@
-node_modules/
-.env
-backend/data/
-*.log
 .DS_Store
+*.zip
+web/node_modules/
+web/.next/
